@@ -2,12 +2,19 @@ body {
     background: #6e5944;
 }
 .calculator{
+    /* chiều dài của phần tử mẹ tự động co giản theo phần tử con */
     height: auto;
+    /* chiều rộng 240px */
     width: 240px;
+    /* tạo khoảng trắng 3% và căn giữa ngang và dọc */
     margin: 3% auto;
+    /* thiết lập màu */
     background: #ccc;
+    /* tạo viền độ dày 1px viền thẳng */
     border: 1px solid #232524;
+    /* tạo góc bo tròn của 4 góc trong thẻ div */
     border-radius: 20px;
+    /*  */
     -moz-box-align: inset 0 0 12px #fff,
     inset 0px 1px #e6e6e6, 0 1px 1px #323643,
     inset 0px 1px #7b839b, 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -36,16 +43,21 @@ body {
     box-shadow: inset 0 0 10px #000,
     inset 0px 1px 1px #0a0b0b, 0 1px 1px #e6e6e6;
 }
+/* focus dùng để chọn các phần tử như INPUT, TEXTAREA, SELECT đang được truy cập vào */
 #screen:focus{
+    /* outline định dạng viền bao ngoài, none không có viền */
     outline: none;
 }
 .buttons {
+    /* chiều rộng 220px */
     width: 220px;
+    /* tạo khoảng trắng ngoài viền 12px */
     margin: 12px;   
 }
 .buttons button{
     width: 45px;
     height: 45px;
+    /* tạo khoảng trắng bên trong viền */
     padding: 0;
     margin: 0 0 10px 5px;
     border: 1px solid #333;
@@ -53,6 +65,7 @@ body {
     color: #ccc;
     font: "Trebuchet MS" , Arial, Helvetica, sans-serif;
     font-weight: bold;
+    /* thiết lập chiều cao giữa các dòng */
     line-height: 45px;
     -moz-box-align: inset 0 0 10px #666,
     inset 0px 1px #bcd6ff, 0 1px 1px #323643;
@@ -62,6 +75,7 @@ body {
     inset 0px 1px #bcd6ff, 0 1px 1px #323643;
     background: #333;
 }
+/* :active chọn các phần tử đang được chuột nhấn vào */
 .buttons:button:active{
     color: #fff;
     border: 1px solid #333;
